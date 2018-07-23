@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "IotHubcluster1"
+    },
+    "nodeTypePrefix": {
+      "value": "SFNodevm"
+    },
+    "primaryNtInstanceCount": {
+      "value": 5
+    },
+    "additionalNodeTypeInstaceCounts": {
+      "value": [
+        2
+      ]
+    },
+    "vmImageSku": {
+      "value": "2016-Datacenter"
+    },
+    "vmNodeSize": {
+      "value": "Standard_D2_v2"
+    },
+    "adminUserName": {
+      "value": "iotadmin"
+    },
+    "adminPassword": {
+      "value": "!!123abc!!123abc"
+    },
+    "servicefabricTcpGatewayPort": {
+      "value": 19000
+    },
+    "servicefabricHttpGatewayPort": {
+      "value": 19080
+    },
+    "servicefabricReverseProxyEndpointPort": {
+      "value": 19081
+    },
+    "lbApplicationPorts": {
+      "value": [443,5671,8883]
+    },
+    "nsgPorts": {
+      "value": [3389]
+    },
+    "sourceVaultValue": {
+      "value": "/subscriptions/196ac5d8-75a5-44c9-9d65-3f4e42ad5a64/resourceGroups/system.iothub.secrets/providers/Microsoft.KeyVault/vaults/iothubsecrets"
+    },
+    "clusterCertificateUrlValue": {
+      "value": "https://iothubsecrets.adminvault.local.azurestack.external/secrets/ih-fabric-pfx/6e3b0e59cd2a4b52a1399a514f6940a7"
+    },
+    "certificateThumbprint": {
+      "value": "9EC6BA1D8B56797093CF686FE91F908BD492FBB4"
+    },
+    "reverseProxyCertificateUrlValue": {
+      "value": ""
+    },
+    "reverseProxyCertificateThumbprint": {
+      "value": ""
+    },
+    "adminClientCertificateThumbprints": {
+      "value": "9EC6BA1D8B56797093CF686FE91F908BD492FBB4"
+    },
+    "nonAdminClientCertificateThumbprints": {
+      "value": ""
+    },
+    "DNSService": {
+      "value": "No"
+    },
+    "RepairManager": {
+      "value": "No"
+    },
+    "serviceFabricUrl": {
+      "value": "http://go.microsoft.com/fwlink/?LinkId=730690"
+    },
+    "serviceFabricRuntimeUrl": {
+      "value": ""
+    },
+    "scriptBaseUrl": {
+      "value": "https://raw.githubusercontent.com/LingyunSu/AzureStack-QuickStart-Templates/sf_gallery_stable/ServiceFabricGalleryItem/Microsoft.ServiceFabricCluster/DeploymentTemplates/"
+    }
+  }
+}

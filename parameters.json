@@ -1,0 +1,14 @@
+{
+	"EnvironmentName" : "AzureStackAdmin",
+	"ARMEndpointURI"  : "https://adminmanagement.local.azurestack.external",
+	"AADTenantID":  "0a9c9a9e-2774-489f-8560-bae5824f8b46",
+	"AADUserName": "ciserviceadmin@maszurestack.onmicrosoft.com",
+	"AADPassword": "User@123",
+	"SubscriptionID": "c193ac8f-40df-4bc5-ab07-44f7b5f006c3",
+	"SubscriptionName": "Default Provider Subscription",
+	"SecretsResourceGroup" :"system.iothub.secrets",
+	"Location" : "local",
+	"KeyvaultName" : "iothubsecrets",
+	"SFClusterResourceGroup" : "system.iothub.cluster",
+	"ExternalDomainFQDN" : "local.azurestack.external"
+}
